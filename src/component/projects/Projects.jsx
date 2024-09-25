@@ -7,7 +7,7 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    image: "src/assets/project-1.jpg",
+    image: "./src/assets/project-1.jpg",
     category: "react",
   },
   {
@@ -15,7 +15,7 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    image: "src/assets/project-1.jpg",
+    image: "./src/assets/project-1.jpg",
     category: "js",
   },
   {
@@ -23,7 +23,7 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    image: "src/assets/project-1.jpg",
+    image: "./src/assets/project-1.jpg",
     category: "html",
   },
 ];
