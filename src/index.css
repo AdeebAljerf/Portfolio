@@ -54,6 +54,18 @@ body {
 
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /*? ________________________________________MEDIA______________________________________ */
+
+/* @media (max-width: 56.25em) {
+  .container {
+    max-width: 10rem;
+    padding: 10rem 0;
+  }
+} */
+/* @media (max-width: 46.5em) {
+  .container {
+    padding: 20rem 0;
+  }
+} */
 @media (max-width: 34em) {
   html {
     font-size: 50%;

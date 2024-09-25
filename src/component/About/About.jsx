@@ -1,10 +1,10 @@
 import "./About.css";
 export default function About() {
   return (
-    <section className="about section" id="section--2">
+    <section className="about  section" id="section--2">
       <h2 className="about-title">About me</h2>
 
-      <div className="terminal ">
+      <div className="terminal  ">
         <div className="terminal-header">
           <div className="header-button red"></div>
           <div className="header-button yellow"></div>
