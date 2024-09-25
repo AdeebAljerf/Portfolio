@@ -133,6 +133,14 @@
 
 /* 900px */
 @media (max-width: 56.25em) {
+  .hero-text p,
+  .projects-link,
+  .hero-btn {
+    font-size: 1.8rem;
+  }
+  .projects-link {
+    display: inline-block;
+  }
   .hero {
     flex-direction: column-reverse;
     gap: 5rem;
