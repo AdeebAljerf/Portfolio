@@ -1,0 +1,71 @@
+:root {
+  --clr-primary: #f5f7f8;
+  --clr-secondry: #747fe0;
+  --clr-light: #5a5d7a;
+  --clr-dark: #384157;
+  /* --clr-dark: #191919; */
+
+  --clr-light-1: #575a75;
+  --clr-primary-light: #fff;
+  --clr-secondry-dark: #3646d3;
+
+  /* --clr-light-2: */
+  /* --clr-light-3: */
+  /*? ______________________________ terminal colors ______________________________*/
+
+  --clr-ter-bg: #575a75;
+  --clr-ter-header: #e4e3e5;
+  --clr-ter-command: #f7f7f7dd;
+  --clr-ter-text: #e7d184;
+  --clr-ter-link: cyan;
+  --clr-ter-link-hover: rgba(0, 255, 255, 0.665);
+  --clr-ter-typingEffect: #f7f7f7dd;
+}
+
+html {
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Monaco, Consolas, Lucida Console, monospace; */
+
+  /* font-family: Camphor, Open Sans, Segoe UI, sans-serif; */
+  font-family: Poppins, sans-serif;
+  background-color: var(--clr-primary);
+}
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 5rem;
+}
+.section {
+  border-bottom: 1px solid #bbb;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////// */
+/*? ________________________________________MEDIA______________________________________ */
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 26.5em) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 22em) {
+  html {
+    font-size: 35%;
+  }
+}

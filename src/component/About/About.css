@@ -1,0 +1,160 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  align-items: center;
+  width: 100%;
+}
+.about-title {
+  font-size: 2.5rem;
+  color: var(--clr-dark);
+}
+/*? ________________________________________TERMIANAL HEADER______________________________________ */
+
+.terminal {
+  width: 100rem;
+  /* height: 60rem; */
+  /* margin-bottom: 5rem; */
+}
+.terminal-header {
+  height: 2.8rem;
+  background-color: var(--clr-ter-header);
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.red {
+  background-color: #f96256;
+  border: 1px solid #f65549;
+}
+.yellow {
+  background-color: #fdbc3d;
+  border: 1px solid #ffb524;
+}
+.green {
+  background-color: #33c948;
+  border: 1px solid #2dbb41;
+}
+.header-button {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin-left: 0.9rem;
+}
+/*? ________________________________________TERMIANAL WINDOW______________________________________ */
+.terminal-window {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  padding-top: 3.5rem;
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  height: 50rem;
+  background-color: var(--clr-ter-bg);
+
+  /* background-color: #282c34; */
+
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.15),
+    0 15px 35px rgba(50, 50, 93, 0.2), 0 5px 15px rgba(0, 0, 0, 0.12);
+  font-family: Lucida Console, monospace;
+  /* Monaco, Consolas, */
+}
+.statement {
+  line-height: 2.4rem;
+}
+.command-container {
+  position: relative;
+  padding-left: 20px;
+}
+.chevron {
+  color: var(--clr-ter-command);
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.chevron::before {
+  content: "\203A"; /* Unicode for right-pointing single angle quotation mark */
+  font-size: 2.4rem;
+}
+.statement h4 {
+  color: var(--clr-ter-command);
+
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.statement p {
+  color: var(--clr-ter-text);
+
+  font-size: 1.6rem;
+}
+.statement p a {
+  text-decoration: none;
+  color: var(--clr-ter-link);
+
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+.statement p a:hover {
+  color: var(--clr-ter-link-hover);
+}
+/*? ________________________________________Typing Effect______________________________________ */
+
+.typingEffect {
+  /* display: block; */
+  width: 0.8rem;
+  height: 2.2rem;
+  background-color: var(--clr-ter-typingEffect);
+
+  animation: blink-caret 1.2s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+/*? ________________________________________MEDIA______________________________________ */
+/* 1120px */
+@media (max-width: 70em) {
+  .terminal {
+    width: 90rem;
+  }
+}
+@media (max-width: 66em) {
+  .terminal {
+    width: 85rem;
+  }
+}
+@media (max-width: 61.25em) {
+  .terminal {
+    width: 80rem;
+  }
+}
+
+/* 900px */
+@media (max-width: 56.25em) {
+  .terminal {
+    width: 75rem;
+  }
+}
+@media (max-width: 50em) {
+  .terminal {
+    width: 65rem;
+  }
+  .terminal-window {
+    gap: 5rem;
+    height: 65rem;
+  }
+}
