@@ -140,4 +140,15 @@ box-icon[name="github"]:hover {
     justify-content: center;
     gap: 1rem;
   }
+  .sup-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .card-links a {
+    font-size: 1.5rem;
+  }
+  box-icon[name="link"],
+  box-icon[name="github"] {
+    width: 2.5rem;
+  }
 }
