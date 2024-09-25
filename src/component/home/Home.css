@@ -58,7 +58,7 @@
 
 .hero-img {
   /* background: url(C:\Users\User\Desktop\Portfolio\src\assets\img7.jpg); */
-  background: url(./src/assets/img7.jpg);
+  /* background: url(./src/assets/img7.jpg); */
 
   -webkit-background-size: cover;
   border: 0.4rem solid var(--clr-dark);

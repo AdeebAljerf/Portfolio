@@ -1,5 +1,5 @@
 import "./Home.css";
-
+import homeImg from "/src/assets/img7.jpg";
 export default function Home() {
   const handleScroll = function (e) {
     e.preventDefault();
@@ -27,7 +27,10 @@ export default function Home() {
       </div>
 
       <div className="hero-box-img">
-        <div className="hero-img"></div>
+        <div
+          className="hero-img"
+          style={{ backgroundImage: `url(${homeImg})` }}
+        ></div>
       </div>
     </section>
   );
