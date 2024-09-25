@@ -1,4 +1,5 @@
 import "./Projects.css";
+import project1 from "../../assets/project-1.jpg";
 import { useState } from "react";
 
 const allProjects = [
@@ -7,7 +8,8 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    image: "/assets/project-1.jpg",
+    // image: "./src/assets/project-1.jpg",
+    image: project1,
     category: "react",
   },
   {
@@ -15,8 +17,8 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    // image: "./src/assets/project-1.jpg",
-    image: "/assets/project-1.jpg",
+    image: project1,
+
     category: "js",
   },
   {
@@ -24,8 +26,8 @@ const allProjects = [
     description:
       " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
 
-    // image: "./src/assets/project-1.jpg",
-    image: "/assets/project-1.jpg",
+    image: project1,
+
     category: "html",
   },
 ];
