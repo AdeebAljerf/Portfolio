@@ -160,12 +160,15 @@
     font-size: 1.8rem;
     line-height: 2;
   }
+  .statement p a {
+    font-size: 1.8rem;
+  }
 
   .terminal {
     width: 65rem;
   }
   .terminal-window {
     gap: 4rem;
-    height: 71rem;
+    height: 75rem;
   }
 }
