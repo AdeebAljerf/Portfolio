@@ -47,12 +47,18 @@
   .contact-links span:after {
     display: none;
   }
-
+  .contact-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .contact-links span a {
+    font-size: 2rem;
+  }
   .contact-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 4rem;
   }
   .contact-links span a:after {
     bottom: -1rem;

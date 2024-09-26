@@ -23,7 +23,9 @@ export default function Home() {
           below.
         </p>
 
-        <button className="hero-btn">Hire Me!</button>
+        <button className="hero-btn" onClick={handleScroll} href="#section--4">
+          Hire Me!
+        </button>
       </div>
 
       <div className="hero-box-img">
