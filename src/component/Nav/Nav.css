@@ -63,15 +63,25 @@
   display: none;
   font-size: 2rem;
   cursor: pointer;
+
+  position: relative;
+  z-index: 1002;
 }
 .nav__mobile-toggle box-icon {
   width: 3rem;
   height: 3rem;
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+}
+.nav__mobile-toggle [name="x"] {
+  z-index: 9999;
 }
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /*? ________________________________________MEDIA______________________________________ */
 @media (max-width: 56.25em) {
   .nav {
+    z-index: 1000;
     padding: 0 2rem;
     height: 9rem;
     background-color: #fff;
@@ -84,32 +94,38 @@
   .nav__mobile-toggle {
     display: block;
   }
-
+  .nav__mobile-toggle [name="x"] {
+    z-index: 9999;
+  }
   .nav__links {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: -100%; /* Start off-screen */
+    justify-content: center;
+    position: fixed;
 
-    top: 7.5rem;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255);
     padding: 2rem;
-
-    opacity: 0;
-    visibility: hidden;
-    /* transition: all 0.3s ease-in-out; */
+    transition: right 0.3s ease-in-out;
   }
 
   .nav__links--mobile {
-    /* display: flex; */
-    top: 7.5rem; /* Slide down to this position */
+    right: 0;
+    height: 100vh;
+
     opacity: 1;
     visibility: visible;
+    z-index: 1001;
   }
 
   .nav__item {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+  }
+  .nav__links--mobile .nav__link:link,
+  .nav__links--mobile .nav__link:visited {
+    font-size: 2rem;
   }
 }
