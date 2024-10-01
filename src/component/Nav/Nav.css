@@ -2,17 +2,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9rem;
+  height: 7.5rem;
   width: 100%;
-  padding: 0 6rem;
-  background-color: rgba(255, 255, 255, 0.95);
+  /* width: 90%; */
+  margin: 0 auto;
+  margin-top: 2rem;
+  /* border-radius: 2rem; */
+  padding: 0 8rem;
   z-index: 100;
-}
 
-/* nav and stickly class at the same time */
-.nav.sticky {
-  position: fixed;
+  /* background-color: rgba(255, 255, 255, 0.95); */
+
+  /* transition: all 0.3s; */
+}
+.sticky {
+  position: sticky;
   background-color: rgba(255, 255, 255, 0.95);
+  top: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+
+  /* top: 2rem; */
 }
 
 .nav__logo {
@@ -24,6 +34,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav__item {
@@ -33,7 +44,7 @@
 .nav__link:link,
 .nav__link:visited {
   font-size: 1.7rem;
-  font-weight: 400;
+  font-weight: 600;
   color: inherit;
   text-decoration: none;
   display: block;
@@ -41,4 +52,60 @@
 }
 .nav__link:hover {
   color: var(--clr-secondry);
+}
+.nav__logo:hover {
+  color: var(--clr-secondry);
+  cursor: pointer;
+}
+
+/* mobile nav */
+.nav__mobile-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav__mobile-toggle box-icon {
+  width: 3rem;
+  height: 3rem;
+}
+/* //////////////////////////////////////////////////////////////////////////////////// */
+/*? ________________________________________MEDIA______________________________________ */
+@media (max-width: 56.25em) {
+  .nav {
+    padding: 0 2rem;
+    background-color: #fff;
+    margin-top: 0;
+  }
+
+  .nav__mobile-toggle {
+    display: block;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -100%; /* Start off-screen */
+
+    top: 7.5rem;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+
+    opacity: 0;
+    visibility: hidden;
+    /* transition: all 0.3s ease-in-out; */
+  }
+
+  .nav__links--mobile {
+    /* display: flex; */
+    top: 7.5rem; /* Slide down to this position */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__item {
+    margin: 1rem 0;
+  }
 }

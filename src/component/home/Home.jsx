@@ -7,7 +7,7 @@ export default function Home() {
     document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <section className="hero section">
+    <section className="hero section" id="section--1">
       <div className="hero-text">
         <h1>Front-End React Developer 👋</h1>
         <p>

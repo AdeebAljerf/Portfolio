@@ -1,11 +1,14 @@
 import "./Nav.css";
-import { useRef, useEffect } from "react";
-export default function Nav() {
+import { useRef, useEffect, useState } from "react";
+export default function Nav({ isSticky }) {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
   const navRef = useRef(null);
-  const navLinksRef = useRef(null);
 
   //? nav fade
   const handleOver = (value, target) => {
+    if (!mobileNavOpen) return;
+
     const siblings = navRef.current.querySelectorAll(".nav__link");
     const logo = navRef.current.querySelector("h3");
 
@@ -39,43 +42,77 @@ export default function Nav() {
     };
   }, []);
 
+  //? scroll to section
   const handleScroll = function (e) {
     e.preventDefault();
+    console.log(isSticky);
+    setMobileNavOpen(!mobileNavOpen);
 
-    if (e.target.classList.contains("nav__link")) {
+    if (
+      e.target.classList.contains("nav__link") ||
+      e.target.classList.contains("nav__logo")
+    ) {
       //! use e.target not this
       const id = e.target.getAttribute("href");
-      console.log(id);
-      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+      if (id === "#section--1" || e.target.classList.contains("nav__logo")) {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        const element = document.querySelector(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
+  };
+
+  //? mobile nav
+
+  const toggleMobileNav = () => {
+    setMobileNavOpen(!mobileNavOpen);
   };
 
   //*--------------------------------------------
   return (
-    <nav className="nav" ref={navRef} id="section--1">
-      <h3 className="nav__logo">Adeeb.dev</h3>
-      <ul className="nav__links" onClick={handleScroll}>
-        <li className="nav__item">
+    <nav className={`nav ${isSticky ? "sticky" : ""}`} ref={navRef}>
+      <h3 className="nav__logo" onClick={handleScroll}>
+        Adeeb.dev
+      </h3>
+      {/* <ul className="nav__links " onClick={handleScroll}> */}
+      <ul
+        className={`nav__links ${mobileNavOpen ? "nav__links--mobile" : ""}`}
+        onClick={handleScroll}
+      >
+        <li className="nav__item ">
           <a className="nav__link" href="#section--1">
             Home
           </a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item ">
           <a className="nav__link" href="#section--2">
             About
           </a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item ">
           <a className="nav__link" href="#section--3">
             Projects
           </a>
         </li>
-        <li className="nav__item">
+        <li className="nav__item ">
           <a className="nav__link" href="#section--4">
             Contact
           </a>
         </li>
       </ul>
+      <div className="nav__mobile-toggle" onClick={toggleMobileNav}>
+        {mobileNavOpen ? (
+          <box-icon name="x"></box-icon>
+        ) : (
+          <box-icon name="menu"></box-icon>
+        )}
+      </div>
     </nav>
   );
 }

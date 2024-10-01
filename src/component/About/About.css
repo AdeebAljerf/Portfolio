@@ -3,10 +3,12 @@
   flex-direction: column;
   gap: 3.5rem;
   align-items: center;
+
   /* overflow: none; */
   width: 100%;
 }
 .about-title {
+  /* margin-top: 15rem; */
   font-size: 2.5rem;
   color: var(--clr-dark);
 }
