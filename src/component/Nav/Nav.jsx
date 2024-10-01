@@ -7,10 +7,8 @@ export default function Nav({ isSticky }) {
 
   //? nav fade
   const handleOver = (value, target) => {
-    if (!mobileNavOpen) return;
-
     const siblings = navRef.current.querySelectorAll(".nav__link");
-    const logo = navRef.current.querySelector("h3");
+    // const logo = navRef.current.querySelector("h3");
 
     if (
       !target.classList.contains("nav__link") &&
@@ -20,7 +18,7 @@ export default function Nav({ isSticky }) {
 
     siblings.forEach((s) => {
       if (s !== target) s.style.opacity = value;
-      if (logo !== target) logo.style.opacity = value;
+      // if (logo !== target) logo.style.opacity = value;
     });
   };
 
@@ -48,13 +46,10 @@ export default function Nav({ isSticky }) {
     console.log(isSticky);
     setMobileNavOpen(!mobileNavOpen);
 
-    if (
-      e.target.classList.contains("nav__link") ||
-      e.target.classList.contains("nav__logo")
-    ) {
+    if (e.target.classList.contains("nav__link")) {
       //! use e.target not this
       const id = e.target.getAttribute("href");
-      if (id === "#section--1" || e.target.classList.contains("nav__logo")) {
+      if (id === "#section--1") {
         window.scrollTo({
           top: 0,
           behavior: "smooth",
@@ -67,6 +62,13 @@ export default function Nav({ isSticky }) {
       }
     }
   };
+  const logoScorll = function (e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   //? mobile nav
 
@@ -77,7 +79,7 @@ export default function Nav({ isSticky }) {
   //*--------------------------------------------
   return (
     <nav className={`nav ${isSticky ? "sticky" : ""}`} ref={navRef}>
-      <h3 className="nav__logo" onClick={handleScroll}>
+      <h3 className="nav__logo" onClick={logoScorll}>
         Adeeb.dev
       </h3>
       {/* <ul className="nav__links " onClick={handleScroll}> */}

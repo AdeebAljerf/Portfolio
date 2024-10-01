@@ -16,10 +16,10 @@ export default function Contact() {
       <h2 className="contact-title">Contact</h2>
       <div className="contact-links">
         <span onClick={handleCopyClick} style={{ cursor: "pointer" }}>
-          <a>{copied ? "Copied!" : "0996034996"}</a>
+          <a>{copied ? "Copied!" : "0992034996"}</a>
         </span>
         <span>
-          <a target="_blank" href="https://wa.me/963996034996">
+          <a target="_blank" href="https://wa.me/963992034996">
             Whatsapp
           </a>
         </span>
