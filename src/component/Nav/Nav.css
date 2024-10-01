@@ -6,7 +6,7 @@
   width: 100%;
   /* width: 90%; */
   margin: 0 auto;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   /* border-radius: 2rem; */
   padding: 0 8rem;
   z-index: 100;
@@ -67,19 +67,17 @@
   position: relative;
   z-index: 1002;
 }
-.nav__mobile-toggle box-icon {
-  width: 3rem;
-  height: 3rem;
-  position: fixed;
-  top: 3rem;
-  right: 2rem;
-}
-.nav__mobile-toggle [name="x"] {
-  z-index: 9999;
-}
+
 /* //////////////////////////////////////////////////////////////////////////////////// */
 /*? ________________________________________MEDIA______________________________________ */
 @media (max-width: 56.25em) {
+  .nav__mobile-toggle box-icon[name="x"] {
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    top: 2.5rem;
+    right: 1.5rem;
+  }
   .nav {
     z-index: 1000;
     padding: 0 2rem;

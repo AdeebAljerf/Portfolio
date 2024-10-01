@@ -1,26 +1,22 @@
 import "./About.css";
-import { useRef, useEffect, useState } from "react";
-export default function About({ setIsSticky }) {
-  const aboutRef = useRef(null);
-  const [coords, setCoords] = useState(null);
-
-  useEffect(() => {
-    if (aboutRef.current) {
-      const boundingRect = aboutRef.current.getBoundingClientRect();
-      setCoords(boundingRect);
-    }
-  }, []);
-
+export default function About() {
   //? nav sticky
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= coords.top) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  });
+  // useEffect(() => {
+  //   if (aboutRef.current) {
+  //     const boundingRect = aboutRef.current.getBoundingClientRect();
+  //     setCoords(boundingRect);
+  //   }
+  // }, []);
+  // window.addEventListener("scroll", () => {
+  //   if (window.scrollY >= coords.top) {
+  //     setIsSticky(true);
+  //   } else {
+  //     setIsSticky(false);
+  //   }
+  // });
+
   return (
-    <section className="about section" id="section--2" ref={aboutRef}>
+    <section className="about section" id="section--2">
       <h2 className="about-title">About me</h2>
 
       <div className="terminal  ">

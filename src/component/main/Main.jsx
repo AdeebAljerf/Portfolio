@@ -6,8 +6,8 @@ import "./Main.css";
 export default function Main({ isSticKy, setIsSticky }) {
   return (
     <main className="main container">
-      <Home></Home>
-      <About isSticKy={isSticKy} setIsSticky={setIsSticky}></About>
+      <Home setIsSticky={setIsSticky}></Home>
+      <About isSticKy={isSticKy}></About>
       <Projects></Projects>
       <Contact></Contact>
     </main>

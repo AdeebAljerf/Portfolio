@@ -72,7 +72,7 @@ body {
     font-size: 55%;
   }
 }
-@media (max-width: 26.5em) {
+/* @media (max-width: 26.5em) {
   html {
     font-size: 40%;
   }
@@ -81,4 +81,4 @@ body {
   html {
     font-size: 35%;
   }
-}
+} */
