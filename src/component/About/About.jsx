@@ -35,7 +35,7 @@ export default function About({ setIsSticky }) {
             <div className="command-container">
               <span className="chevron"></span> <h4>Adeeb.currentLocation</h4>
             </div>
-            <p>"San Jose, CA"</p>
+            <p>"Syria , Damascus"</p>
           </div>
 
           <div className="statement">
