@@ -29,7 +29,11 @@ export default function Home({ setIsSticky }) {
   }, [setIsSticky]);
 
   return (
-    <section className="hero section" id="section--1" ref={heroRef}>
+    <section
+      className="hero section reveal-section"
+      id="section--1"
+      ref={heroRef}
+    >
       <div className="hero-text">
         <h1>Front-End React Developer 👋</h1>
         <p>
@@ -50,16 +54,10 @@ export default function Home({ setIsSticky }) {
         </button>
       </div>
 
-      <div
-        className="hero-box-img "
-        // style={{
-        //   backgroundImage: `url(${homeImg_small})`,
-        // }}
-      >
+      <div className="hero-box-img ">
         <div
           className="hero-img"
           style={{ backgroundImage: `url(${homeImg})` }}
-          loading="lazy"
         ></div>
       </div>
     </section>

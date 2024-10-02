@@ -1,3 +1,4 @@
-.a {
-  background-color: #fff;
+.main {
+  overflow-x: hidden;
+  max-width: 100%;
 }

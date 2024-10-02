@@ -46,7 +46,10 @@ export default function Projects() {
   const [currentActive, setCurrentActive] = useState("all");
   const [projects, setProjects] = useState(allProjects);
   return (
-    <section className="projects container section " id="section--3">
+    <section
+      className="projects container section reveal-section"
+      id="section--3"
+    >
       <section className="left-section">
         <button
           onClick={() => {
@@ -92,7 +95,7 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <article key={project.category} className="card">
-              <img src={project.image} width={270} alt="" loading="lazy" />
+              <img src={project.image} width={270} alt="" />
               <div style={{ width: `270px` }} className="box">
                 <h1 className="project-title">{project.name}</h1>
                 <p className="sup-title">{project.description}</p>

@@ -153,6 +153,10 @@
     height: auto;
     max-width: 61rem;
     padding: 5rem 4rem;
+    /* padding: 1rem; */
+  }
+  .hero-text h1 {
+    font-size: 4rem;
   }
   .hero-text {
     text-align: center;
@@ -161,7 +165,7 @@
     margin: 0 auto;
   }
   .hero-img {
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
   }
 }

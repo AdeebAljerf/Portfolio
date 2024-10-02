@@ -16,7 +16,7 @@ export default function About() {
   // });
 
   return (
-    <section className="about section" id="section--2">
+    <section className="about section reveal-section" id="section--2">
       <h2 className="about-title">About me</h2>
 
       <div className="terminal  ">
@@ -39,9 +39,19 @@ export default function About() {
               <span className="chevron"></span> <h4>Adeeb.contactInfo</h4>
             </div>
             <p>
-              ["<a href="#">adeebaljerf2@gmail.com</a>", "
-              <a href="#">LinkedIn</a>
-              ", "<a href="#">github</a>"]
+              ["
+              <a target="_blank" href="https://adeebaljerf2@gmail.com">
+                adeebaljerf2@gmail.com
+              </a>
+              ", "
+              <a
+                target="_blank"
+                href=" https://www.linkedin.com/in/adeeb-aljerf-5591b72b4
+"
+              >
+                LinkedIn
+              </a>
+              ", "<a href="https://github.com/AdeebAljerf">github</a>"]
             </p>
           </div>
 
