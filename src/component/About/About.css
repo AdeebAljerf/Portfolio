@@ -174,3 +174,24 @@
     height: 75rem;
   }
 }
+@media (max-width: 37.2em) {
+  .terminal {
+    width: 60rem;
+  }
+}
+@media (max-width: 29.2em) {
+  .terminal {
+    width: 50rem;
+  }
+  .terminal-window {
+    height: 80rem;
+  }
+}
+@media (max-width: 23.8em) {
+  .terminal {
+    width: 45rem;
+  }
+  .terminal-window {
+    height: 90rem;
+  }
+}

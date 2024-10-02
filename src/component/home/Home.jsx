@@ -50,10 +50,16 @@ export default function Home({ setIsSticky }) {
         </button>
       </div>
 
-      <div className="hero-box-img">
+      <div
+        className="hero-box-img "
+        // style={{
+        //   backgroundImage: `url(${homeImg_small})`,
+        // }}
+      >
         <div
           className="hero-img"
           style={{ backgroundImage: `url(${homeImg})` }}
+          loading="lazy"
         ></div>
       </div>
     </section>

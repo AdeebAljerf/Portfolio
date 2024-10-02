@@ -41,6 +41,8 @@ body {
   font-family: Poppins, sans-serif;
   background-color: var(--clr-primary);
   /* margin-top: 2rem; */
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .container {
   margin: 0 auto;

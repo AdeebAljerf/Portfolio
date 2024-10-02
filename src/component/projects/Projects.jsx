@@ -92,7 +92,7 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <article key={project.category} className="card">
-              <img src={project.image} width={270} alt="" />
+              <img src={project.image} width={270} alt="" loading="lazy" />
               <div style={{ width: `270px` }} className="box">
                 <h1 className="project-title">{project.name}</h1>
                 <p className="sup-title">{project.description}</p>
