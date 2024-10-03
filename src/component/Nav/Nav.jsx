@@ -7,6 +7,7 @@ export default function Nav({ isSticky }) {
 
   //? nav fade
   const handleOver = (value, target) => {
+    if (window.innerWidth < 900) return;
     const siblings = navRef.current.querySelectorAll(".nav__link");
     const logo = navRef.current.querySelector("h3");
 

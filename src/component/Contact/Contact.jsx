@@ -12,11 +12,13 @@ export default function Contact() {
     });
   };
   return (
-    <section className="contact container section" id="section--4">
+    <section className="contact container section " id="section--4">
       <h2 className="contact-title">Contact</h2>
       <div className="contact-links">
         <span onClick={handleCopyClick} style={{ cursor: "pointer" }}>
-          <a>{copied ? "Copied!" : "Phone Number"}</a>
+          <a style={{ minWidth: "15.5rem", textAlign: "center" }}>
+            {copied ? "Copied!" : "+963 992034996"}
+          </a>
         </span>
         <span>
           <a target="_blank" href="https://wa.me/963992034996">
