@@ -46,6 +46,7 @@
   column-gap: 1.6rem;
   row-gap: 3rem;
   justify-content: center;
+
   /* flex-grow: 1; */
 }
 .card {
@@ -58,8 +59,10 @@
 }
 .card img {
   border-radius: 10px 10px 0 0;
+
   /* border-radius: 10px; */
 }
+
 .card:hover {
   border: 2px solid var(--clr-secondry-dark);
 
@@ -157,5 +160,12 @@ box-icon[name="github"]:hover {
   box-icon[name="link"],
   box-icon[name="github"] {
     width: 2.5rem;
+  }
+  .card {
+    transition: 0.1s; /* Faster transition for mobile */
+  }
+
+  .card:hover {
+    scale: 1; /* Remove scale effect on mobile */
   }
 }
