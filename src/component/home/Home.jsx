@@ -35,7 +35,7 @@ export default function Home({ setIsSticky }) {
       ref={heroRef}
     >
       <div className="hero-text">
-        <h1>Front-End React Developer 👋</h1>
+        <h1>Front-End React Developer </h1>
         <p>
           Hi, I'm Adeeb Aljerf. My passion is building simple, beautiful user
           experiences. Check out my{" "}

@@ -46,10 +46,7 @@ export default function Projects() {
   const [currentActive, setCurrentActive] = useState("all");
   const [projects, setProjects] = useState(allProjects);
   return (
-    <section
-      className="projects container section reveal-section"
-      id="section--3"
-    >
+    <section className="projects  section reveal-section" id="section--3">
       <section className="left-section">
         <button
           onClick={() => {

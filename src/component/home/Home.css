@@ -137,8 +137,9 @@
   .hero-text p,
   .projects-link,
   .hero-btn {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
+
   .projects-link {
     display: inline-block;
   }
@@ -152,11 +153,12 @@
 
     height: auto;
     max-width: 61rem;
-    padding: 5rem 4rem;
+    padding: 0 1rem;
+    /* padding: 5rem 4rem; */
     /* padding: 1rem; */
   }
   .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .hero-text {
     text-align: center;

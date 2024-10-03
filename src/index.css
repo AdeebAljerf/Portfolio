@@ -53,9 +53,10 @@ body {
   padding-top: 9rem;
   padding-bottom: 10rem;
 }
+
 .section--hidden {
   opacity: 0;
-  transform: scale(0.9) translateY(5rem);
+  transform: scale(0.9) translateY(3rem);
 }
 
 .section--visible {

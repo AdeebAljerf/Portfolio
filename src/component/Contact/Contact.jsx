@@ -12,7 +12,7 @@ export default function Contact() {
     });
   };
   return (
-    <section className="contact container section " id="section--4">
+    <section className="contact  section " id="section--4">
       <h2 className="contact-title">Contact</h2>
       <div className="contact-links">
         <span onClick={handleCopyClick} style={{ cursor: "pointer" }}>
