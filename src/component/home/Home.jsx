@@ -29,11 +29,7 @@ export default function Home({ setIsSticky }) {
   }, [setIsSticky]);
 
   return (
-    <section
-      className="hero section reveal-section"
-      id="section--1"
-      ref={heroRef}
-    >
+    <section className="hero section " id="section--1" ref={heroRef}>
       <div className="hero-text">
         <h1>Front-End React Developer </h1>
         <p>

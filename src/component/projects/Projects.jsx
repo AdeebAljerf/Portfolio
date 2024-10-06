@@ -11,6 +11,7 @@ const allProjects = [
     // image: "./src/assets/project-1.jpg",
     image: project1,
     category: "react",
+    link: "https://adeebaljerf.github.io/TicTacToe/",
   },
   {
     name: "Tic Tac Toe",
@@ -91,7 +92,7 @@ export default function Projects() {
       <section className="right-section">
         {projects.map((project) => {
           return (
-            <article key={project.category} className="card">
+            <article key={project.category} className="card reveal-section">
               <img src={project.image} width={270} alt="" />
               <div style={{ width: `270px` }} className="box">
                 <h1 className="project-title">{project.name}</h1>
@@ -104,7 +105,9 @@ export default function Projects() {
                   </div>
 
                   <div className="demo-container">
-                    <a href="#">Demo</a>
+                    <a target="_blank" href={project.link}>
+                      Demo
+                    </a>
                     <box-icon
                       name="right-arrow-alt"
                       className="arrow-icon"
