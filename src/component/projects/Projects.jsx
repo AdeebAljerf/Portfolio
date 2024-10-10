@@ -1,5 +1,6 @@
 import "./Projects.css";
 import project1 from "../../assets/project-1.jpg";
+import project2 from "../../assets/project-2.jpg";
 import { useState } from "react";
 
 const allProjects = [
@@ -14,13 +15,14 @@ const allProjects = [
     link: "https://adeebaljerf.github.io/TicTacToe/",
   },
   {
-    name: "Tic Tac Toe",
+    name: "Adeeb Quiz",
     description:
-      " tic tac toe game by react i did this project to practice how  to deal with the dom in the react way",
+      " Quiz app built with React's useReducer and a fake API for backend simulation, enhancing state management and data fetching skills",
 
-    image: project1,
+    image: project2,
 
-    category: "js",
+    category: "react",
+    link: "https://adeebaljerf.github.io/AdeebQuiz/",
   },
   {
     name: "Tic Tac Toe",
@@ -93,7 +95,7 @@ export default function Projects() {
         {projects.map((project) => {
           return (
             <article key={project.category} className="card reveal-section">
-              <img src={project.image} width={270} alt="" />
+              <img src={project.image} width={270} height={200} alt="" />
               <div style={{ width: `270px` }} className="box">
                 <h1 className="project-title">{project.name}</h1>
                 <p className="sup-title">{project.description}</p>
